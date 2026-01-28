@@ -28,9 +28,7 @@
       del.onclick = () => {
         if (window.confirm('このタスクを削除しますか？')) {
           li.remove(); //「はい」を選択した場合
-        } else {
-          saveTasks();
-      };
+        } saveTasks();
     };
 
     //HTML上に表示する
@@ -38,7 +36,7 @@
       list.appendChild(li);
     }
 
-    //追加されたタスクの保存をする
+    //追加されたタスクをページを閉じても消えないように保存する
     //list.children(liの集まり)を配列に変換し
     //各liの最初のテキスト（タスク名）だけを取り出して配列にする
     function saveTasks() {
