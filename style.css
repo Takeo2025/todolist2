@@ -15,6 +15,7 @@ li {
     border-bottom: 1px solid #ddd; 
     display: flex; 
     justify-content: space-between; 
+    align-items: center;
 }
     
 button { 
@@ -28,18 +29,16 @@ button {
     }
 
     li {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     button {
         height: 50px;
         font-size: 18px;
-        padding: 0 16px;
+        padding: 0 13px;
     }
 
     #taskInput {
         font-size: 16px !important;
     }
 }
-
-
