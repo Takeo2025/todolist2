@@ -9,6 +9,7 @@ body {
     
     
 li { 
+    font-size: 20px;
     list-style: none; 
     padding: 8px; 
     border-bottom: 1px solid #ddd; 
@@ -24,6 +25,10 @@ button {
     body {
         max-width: 100%;
         padding: 0 12px;
+    }
+
+    li {
+        font-size: 30px;
     }
 
     button {
