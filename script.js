@@ -1,4 +1,4 @@
- // 要素の呼び出し
+ //要素の呼び出し
     const input = document.getElementById("taskInput");
     const addBtn = document.getElementById("addBtn");
     const list = document.getElementById("taskList");
@@ -26,9 +26,12 @@
       const del = document.createElement("button");
       del.textContent = "削除";
       del.onclick = () => {
-        li.remove();
-        saveTasks();
+        if (window.confirm('このタスクを削除しますか？')) {
+          li.remove(); //「はい」を選択した場合
+        } else {
+          saveTasks();
       };
+    };
 
     //HTML上に表示する
       li.appendChild(del);
