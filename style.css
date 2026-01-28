@@ -29,6 +29,7 @@ button {
     button {
         height: 50px;
         font-size: 18px;
+        padding: 0 16px;
     }
 
     #taskInput {
